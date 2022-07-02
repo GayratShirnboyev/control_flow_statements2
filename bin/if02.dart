@@ -14,16 +14,16 @@ int func(
   int c,
 ) {
   int x = 0;
-  if (a < b && b < c && a < c) {
+  if (a < b && a < c) {
     return a;
   }
-  if (a > b && b > c && c > a) {
+  if (a > c && b > c) {
     return c;
   }
-  if (a < b && b > c && a > c) ;
-  return c;
+  if (a > b && a > b) ;
+  return b;
 }
 
 void main() {
-  print(func(2, 45, 67));
+  print(func(7, 4, 12));
 }

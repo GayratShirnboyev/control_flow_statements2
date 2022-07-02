@@ -9,7 +9,7 @@ Returns:
     int: return answer.
 */
 int func(int a, int b, int c) {
-  int x = 9;
+  int x = 0;
   if (a < b && b < c && a < c) {
     x = c;
   }
@@ -17,5 +17,5 @@ int func(int a, int b, int c) {
 }
 
 void main() {
-  print(func(4, 7, 9));
+  print(func(2, 3, 4));
 }

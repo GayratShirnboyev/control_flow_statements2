@@ -14,9 +14,13 @@ int func(int a, int b, int c) {
   if (a < b && b < c && a < c) {
     return c;
   }
-  return x;
+  if (a < b && b > c && c > a) {
+    return b;
+  }
+  if (a > b && b < c && a > c) ;
+  return a;
 }
 
 void main() {
-  print(func(2, 6, 7));
+  print(func(12, 9, 8));
 }

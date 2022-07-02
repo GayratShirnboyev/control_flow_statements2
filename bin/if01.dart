@@ -10,12 +10,13 @@ Returns:
 */
 int func(int a, int b, int c) {
   int x = 0;
+
   if (a < b && b < c && a < c) {
-    x = c;
+    return c;
   }
   return x;
 }
 
 void main() {
-  print(func(2, 3, 4));
+  print(func(2, 6, 7));
 }

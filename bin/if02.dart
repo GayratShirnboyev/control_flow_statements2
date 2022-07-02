@@ -20,7 +20,7 @@ int func(
   if (a > c && b > c) {
     return c;
   }
-  if (a > b && a > b) ;
+  if (a > b && c > b) ;
   return b;
 }
 

@@ -17,5 +17,5 @@ int func(int a, int b, int c) {
 }
 
 void main() {
-  print(func(2, 3, 7));
+  print(func(4, 7, 9));
 }

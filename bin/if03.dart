@@ -8,7 +8,7 @@ Args:
 Returns:
     int: return answer. */
 int func(int a, int b, int c) {
-  int x = 5;
+  int x = 0;
   if (a > b && b > c) {
     return b;
   }
@@ -22,5 +22,5 @@ int func(int a, int b, int c) {
 }
 
 void main() {
-  print(func(5, 10, 20));
+  print(func(8, 5, 6));
 }

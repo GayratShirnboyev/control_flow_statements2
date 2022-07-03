@@ -8,20 +8,19 @@ Args:
 Returns:
     int: return answer. */
 int func(int a, int b, int c) {
-  int x = 0;
-
-  if (a < b && b < c) {
+  int x = 5;
+  if (a > b && b > c) {
     return b;
   }
-  if (a > b && b > c) {
-    return c;
-  }
-  if (b > a && c > a) {
+  if (a < b && a > c) {
     return a;
+  }
+  if (a < c && b > c) {
+    return c;
   }
   return x;
 }
 
 void main() {
-  print(func(6, 45, 8));
+  print(func(1, 5, 2));
 }

@@ -7,5 +7,13 @@ Args:
     c: Third number.
 Returns:
     int: return answer. */
+bool func(int a, int b, int c) {
+  if (a < b && b < c) {
+    return true;
+  }
+  return false;
+}
+
 void main() {
+  print(func(9, 7, 8));
 }

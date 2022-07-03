@@ -7,13 +7,21 @@ Args:
     c: Third number.
 Returns:
     int: return answer. */
-bool func(int a, int b, int c) {
+int func(int a, int b, int c) {
+  int x = 0;
+
   if (a < b && b < c) {
-    return true;
+    return b;
   }
-  return false;
+  if (a > b && b > c) {
+    return c;
+  }
+  if (b > a && c > a) {
+    return a;
+  }
+  return x;
 }
 
 void main() {
-  print(func(9, 7, 8));
+  print(func(6, 45, 8));
 }

@@ -12,15 +12,24 @@ int func(int a, int b, int c) {
   if (a > b && b > c) {
     return b;
   }
+  if (a < b && b < c) {
+    return b;
+  }
   if (a < b && a > c) {
     return a;
   }
+  if (a > b && a < c) {
+    return a;
+  }
   if (a < c && b > c) {
+    return c;
+  }
+  if (a > c && b < c) {
     return c;
   }
   return x;
 }
 
 void main() {
-  print(func(5, 7, 4));
+  print(func(7, 8, 5));
 }

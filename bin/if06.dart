@@ -20,10 +20,12 @@ int func(a) {
     return 3;
   } else if (w > r && w > d && w > v && w > s) {
     return 4;
+  } else if (r > w && r > d && r > v && r > s) {
+    return 5;
   }
-  return 5;
+  return 0;
 }
 
 void main() {
-  print(func(13580));
+  print(func(13568));
 }

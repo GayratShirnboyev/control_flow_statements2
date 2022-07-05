@@ -12,7 +12,7 @@ int func(a) {
   int d = a ~/ 10 % 100 ~/ 10;
   int w = a ~/ 10 ~/ 100 % 10;
   int r = a ~/ 10 ~/ 100 ~/ 10;
-  if (a > v && a > d && a > w && a > r) {
+  if (s > v && s > d && s > w && s > r) {
     return 1;
   } else if (v > s && v > d && v > w && v > r) {
     return 2;
@@ -27,5 +27,5 @@ int func(a) {
 }
 
 void main() {
-  print(func(13568));
+  print(func(13978));
 }
